@@ -1,0 +1,63 @@
+{
+    "name": "mohmmadshabrani/laravel-select-except",
+    "description": "Omit columns from Laravel Eloquent and query builder SELECT statements at the SQL level.",
+    "keywords": [
+        "laravel",
+        "eloquent",
+        "query",
+        "select",
+        "except",
+        "columns",
+        "performance"
+    ],
+    "homepage": "https://github.com/Mohmmadshabrani/laravel-select-except",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shabrani",
+            "homepage": "https://github.com/Mohmmadshabrani",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Mohmmadshabrani/laravel-select-except/issues",
+        "source": "https://github.com/Mohmmadshabrani/laravel-select-except"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shabrani\\SelectExcept\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shabrani\\SelectExcept\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shabrani\\SelectExcept\\SelectExceptServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "pint": "pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
